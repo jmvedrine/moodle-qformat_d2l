@@ -30,4 +30,5 @@ $string['importedcategory'] = 'Imported category {$a}';
 $string['notenoughtsubans'] = 'Unable to import matching question \'{$a}\' because a matching question must comprise at least two questions and three answers.';
 $string['pluginname'] = 'Desire2Learn';
 $string['pluginname_help'] = 'd2l format enables questions saved in Desire2Learn XML QTI to be imported via a zip archive.';
+$string['privacy:metadata'] = 'The Desire2Learn question format plugin does not store any personal data.';
 $string['unhandledpresblock'] = 'Unhandled presentation block';
