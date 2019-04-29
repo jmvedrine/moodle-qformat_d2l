@@ -87,7 +87,7 @@ class qformat_d2l extends qformat_d2l_base {
         if (is_readable($filename)) {
             if (!copy($filename, $this->tempdir . '/d2l_questions.zip')) {
                 $this->error(get_string('cannotcopybackup', 'question'));
-//                fulldelete($this->tempdir);
+                fulldelete($this->tempdir);
                 return false;
             }
             $packer = get_file_packer('application/zip');
@@ -96,7 +96,7 @@ class qformat_d2l extends qformat_d2l_base {
 
                 if (!$dom->load($this->tempdir . '/imsmanifest.xml')) {
                     $this->error(get_string('errormanifest', 'qformat_d2l'));
-//                    fulldelete($this->tempdir);
+                    fulldelete($this->tempdir);
                     return false;
                 }
 
@@ -124,15 +124,15 @@ class qformat_d2l extends qformat_d2l_base {
                     return $qfile;
                 } else {
                     $this->error(get_string('cannotfindquestionfile', 'question'));
- //                   fulldelete($this->tempdir);
+                    fulldelete($this->tempdir);
                 }
             } else {
                 $this->error(get_string('cannotunzip', 'question'));
-//                fulldelete($this->temp_dir);
+                fulldelete($this->temp_dir);
             }
         } else {
             $this->error(get_string('cannotreaduploadfile', 'error'));
-//            fulldelete($this->tempdir);
+            fulldelete($this->tempdir);
         }
         return false;
     }

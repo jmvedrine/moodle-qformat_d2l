@@ -56,7 +56,7 @@ class qformat_d2l_base extends qformat_based_on_xml {
      */
     public function importpostprocess() {
         if ($this->tempdir != '') {
- //           fulldelete($this->tempdir);
+            fulldelete($this->tempdir);
         }
         return true;
     }

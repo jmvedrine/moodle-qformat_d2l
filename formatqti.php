@@ -156,7 +156,7 @@ class qformat_d2l_qti extends qformat_d2l_base {
                     array('#', 'outcomes', 0, '#', 'decvar', 0, '@', 'varname'),
                     array(), false);
             $responses = array();
-            
+
             $this->process_responses($respconditions, $responses);
 
             $rawquestion->responses = $responses;
@@ -168,7 +168,7 @@ class qformat_d2l_qti extends qformat_d2l_base {
         $feedbacks = array();
         $this->process_feedback($feedbackset, $feedbacks);
         $rawquestion->feedback = $feedbacks;
-        
+
         return $rawquestion;
     }
 
@@ -616,7 +616,7 @@ class qformat_d2l_qti extends qformat_d2l_base {
         foreach ($responses as $response) {
             if ($response->title == 'correct') {
                 $answerset = $response->ident;
-                
+
                 foreach ($answerset as $ans) {
                     $correctanswers[$ans] = 1;
                 }

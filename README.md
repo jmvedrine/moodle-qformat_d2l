@@ -9,6 +9,7 @@ To install, either download the zip file, unzip it, and place it in the moodle/q
 Alternatively, get the code using git by running the following commands in the top level folder of your Moodle install:
 
 git clone git://github.com/jmvedrine/moodle-qformat_d2l.git question/format/d2l
+echo '/question/format/d2l/' >> .git/info/exclude
 
 
 You must visit Site administration and install it like any other Moodle plugin.
@@ -22,3 +23,9 @@ This work was made possible by comments, ideas and test files provided by Moodle
 https://moodle.org/mod/forum/view.php?id=737
 
 Jean-Michel Védrine
+
+WARNING :
+I am now retired and I stopped all Moodle related activities.
+This repository is here just for history and this work is not maintained any more.
+Feel free to fork it and modify it to suit your needs or improve compatibility with recent Moodle versions.
+Additionally you can consider contacting the Moodle team and become the new maintainer of this plugin. Thanks
