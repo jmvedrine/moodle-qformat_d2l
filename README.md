@@ -6,9 +6,10 @@ It was created by Jean-Michel Vedrine.
 ##Installation
 To install, either download the zip file, unzip it, and place it in the moodle/question/format directory. (You will need to rename the directory from "moodle-qformat_d2l" to just "d2l".)
 
-Alternatively, get the code using git by running the following command in the top level folder of your Moodle install:
+Alternatively, get the code using git by running the following commands in the top level folder of your Moodle install:
 
 git clone git://github.com/jmvedrine/moodle-qformat_d2l.git question/format/d2l
+
 
 You must visit Site administration and install it like any other Moodle plugin.
 
@@ -21,4 +22,3 @@ This work was made possible by comments, ideas and test files provided by Moodle
 https://moodle.org/mod/forum/view.php?id=737
 
 Jean-Michel Védrine
-vedrine@univ-st-etienne.fr
